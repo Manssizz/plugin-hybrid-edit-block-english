@@ -43,7 +43,7 @@ const HtmlEdited = Node.create({
         return {
           priority: 81,
           icon: markRaw(MdiLanguageHtml5),
-          title: "HTML 编辑块",
+          title: "HTML Code",
           keywords: ["html", "编辑块"],
           command: ({ editor, range }: { editor: Editor; range: Range }) => {
             editor.chain().deleteRange(range).addHtmlEdited().run();
@@ -59,7 +59,7 @@ const HtmlEdited = Node.create({
             props: {
               editor,
               icon: markRaw(MdiLanguageHtml5),
-              title: "HTML 编辑块",
+              title: "HTML Code",
               action: () => {
                 editor.chain().addHtmlEdited().run();
                 editor.chain().setSelectHtmlNode().run();
